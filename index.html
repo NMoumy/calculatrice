@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <main>
+    <div class="calculatrice">
+        <div class="entete">
+          <h2>moumy</h2>
+          <div class="panneau-solaire"></div>
+        </div>
+        <input type="text" id="affichage" disabled>
+        <div class="boutons">
+            <button onclick="ajouterAaffichage('1')">1</button>
+            <button onclick="ajouterAaffichage('2')">2</button>
+            <button onclick="ajouterAaffichage('3')">3</button>
+            <button onclick="ajouterAaffichage('4')">4</button>
+            <button onclick="ajouterAaffichage('5')">5</button>
+            <button onclick="ajouterAaffichage('6')">6</button>
+            <button onclick="ajouterAaffichage('7')">7</button>
+            <button onclick="ajouterAaffichage('+')" class="operateur">+</button>
+            <button onclick="ajouterAaffichage('8')">8</button>
+            <button onclick="ajouterAaffichage('9')">9</button>
+            <button onclick="ajouterAaffichage('0')">0</button>
+            <button onclick="ajouterAaffichage('-')" class="operateur">-</button>
+            <button onclick="ajouterAaffichage('*')" class="operateur">x</button>
+            <button onclick="ajouterAaffichage('/')" class="operateur">÷</button>
+            <button onclick="effacerAffichage()" class="operateur">C</button>
+            <button onclick="calculerResultat()" class="operateur">=</button>
+        </div>
+    </div>
+    <script src="/scripts/script.js"></script>
+  </main>
+</body>
+</html>

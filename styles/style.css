@@ -1,0 +1,122 @@
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(153, 153, 153);
+}	
+
+.calculatrice {
+  text-align: center;
+  background-color: rgb(40, 40, 40);
+  border-radius: 15px;
+  height: 80vh;
+  display: flex;
+  width: 400px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.entete {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.panneau-solaire {
+  width: 125px;
+  height: 40px;
+  background-color: rgb(62, 37, 37);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px inset;
+}
+
+#affichage {
+  text-align: right;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px inset;
+  padding: 10px;
+  font-size: 40px; 
+  border-radius: 15px;
+  background-color: rgb(184, 183, 183);
+}
+
+.boutons {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}	
+
+.boutons button {
+  width: 100%;
+  height: 100%;
+  font-size: 35px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(53, 53, 53);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.boutons button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px inset;
+  background-color: rgb(46, 46, 46);
+}
+
+.boutons .operateur {
+  background-color: rgb(85, 85, 85);
+}
+.boutons .operateur:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+@media screen and (max-width: 500px) {
+  .calculatrice {
+    height: 70vh;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .calculatrice {
+    height: 60vh;
+    width: 200px;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  .panneau-solaire {
+    width: 70px;
+    height: 20px;
+  }
+
+}
